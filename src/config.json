@@ -1,0 +1,13 @@
+{
+  "columns": 3,
+  "images_count": 40,
+  "image_width": 216,
+  "image_height": 144,
+  "image_slides_count": 5,
+  "spin_time": 5000,
+  "prize_time": 2000,
+  "columns_stop_delay": 1000,
+  "loops": 2,
+  "need_same_images_to_win": 2,
+  "prize_animation_speed": 80
+}
