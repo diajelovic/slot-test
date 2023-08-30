@@ -21,7 +21,6 @@ module.exports = (env) => {
     },
     context: path.resolve(__dirname, 'src'),
     mode: isDEV ? "development" : "production",
-    watch: isDEV,
     devtool: "eval-source-map",
     module: {
       rules: [
@@ -49,7 +48,9 @@ module.exports = (env) => {
       extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
     },
     devServer: {
-      contentBase: path.join(__dirname, 'dist'),
+      static: {
+        directory: path.join(__dirname, 'dist'),
+      },
       compress: true,
       port: 9000
     }
